@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Love Me</title>
+    <link rel="icon" href="https://images.pexels.com/photos/14401/pexels-photo-14401.jpeg?auto=compress&cs=tinysrgb&w=600">
+    <link href="https://fonts.googleapis.com/css2?family=Content:wght@700&family=Noto+Serif+Khmer:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+        }
+        .container{
+           background-color: pink; 
+           padding: 1rem;
+           height: 100px;
+           border-radius: 10px;
+           box-shadow: 1px 1px 10px 0px black;
+        }
+        h2{
+            font-family: Noto Serif Khmer;
+        }
+        button{
+            padding: 0.5rem 2ream;
+            border: none;
+            outline: none;
+            font-weight: bolder;
+            border-radius: 6px;
+            height: 25px;
+            box-shadow: 1px 1px 5px 0px black;
+            cursor: pointer;
+            transition: all .2s ease-in;
+        }
+        .btn1{
+            background-color: purple;
+            color: white;
+            width: 50px;
+        }
+        .btn1:hover{
+            background-color: rgb(128, 90, 96);
+            color: rgb(255, 252, 252);
+        }
+        .btn2{
+            padding: 0.5rem 1ream;
+            background-color: rgb(214, 96, 189);
+           
+        }
+        .moving{
+            margin-left: 90px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h2 class="tet">ស្រឡាញ់ខ្ញុំដែលទេ?💜</h2>
+        <button class="btn1 ">Yes</button>
+        <button class="btn2 ">NO</button>
+    </section>
+    <script>
+        const btnAgree =document.querySelector(".btn1");
+        const btnDisagreee =document.querySelector(".btn2");
+        const text = document.querySelector(".text");
+        btnAgree.addEventListener("click", ()=>{
+            text.innerText = "តោះ​ស្រឡាញ់គ្នា💋💚";
+        });
+        btnDisagreee.addEventListener("mouseover", ()=>{
+            btnDisagreee.classList.toggle("moving")
+        });
+    </script>
+</body>
+</html>
